@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Sowa Programming School</title>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to Sowa Programming School!</h1>
+        <div id="bookingForm">
+            <span>Name</span>
+            <input id="bookingName" type="text"/>
+            </br>
+            <span>Number of guests</span>
+            <input id="bookingGuestNumber" type="number" min="1" max="15" value="1"/>
+            </br>
+            <span>Time</span>
+            <input id="bookingHour" type="number" min="12" max="21" value="12"/>
+            <span>:</span>
+            <input id="bookingMinute" type="number" min="0" max="59" value="0"/>  
+            </br>       
+            <button onclick="addBooking()">Book</button>
+        </div>
+        <div id="bookingList"></div>
+    </body>
+</html>

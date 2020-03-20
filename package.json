@@ -1,0 +1,26 @@
+{
+  "name": "sowa-programming-school",
+  "version": "1.0.0",
+  "description": "Sample HTML/JavaScript/React web application for learning programming.",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./src -p 80 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hurrikam/sowa-programming-school.git"
+  },
+  "author": {
+    "name": "Diego Di Mauro",
+    "url": "https://github.com/hurrikam"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hurrikam/sowa-programming-school/issues"
+  },
+  "homepage": "https://github.com/hurrikam/sowa-programming-school#readme",
+  "dependencies": {
+    "http-server": "0.12.1"
+  }
+}
