@@ -1,11 +1,26 @@
 <html>
+    <!-- A line enclosed by the combination of characters at the beginning and at the end of
+         this sentence, represents a comment in HTML. The browser will just ignore it. -->
     <head>
+        <!-- This is the title of our page, we want to be displayed on the title bar of the browser -->
         <title>Sowa Programming School</title>
+        <!--
+            The following SCRIPT element tells the browser to download and parse our JavaScript file
+            "index.js", together with our HTML page
+        -->
         <script src="./index.js"></script>
     </head>
+    <!-- While the HEAD section only contains information about our web page, the following BODY
+        element contains the elements we see on screen -->
     <body>
         <h1>Welcome to Sowa Programming School!</h1>
-        <div id="bookingForm">
+        <div>
+            <!-- 
+                The following INPUT elements display fields the user can type in.
+                Note that for each of those elements we are setting the "id" attribute
+                to a unique name we will reference in our JavaScript code, in order to
+                access them.
+            -->            
             <span>Name</span>
             <input id="bookingName" type="text"/>
             </br>
@@ -16,7 +31,12 @@
             <input id="bookingHour" type="number" min="12" max="21" value="12"/>
             <span>:</span>
             <input id="bookingMinute" type="number" min="0" max="59" value="0"/>  
-            </br>       
+            </br>
+            <!-- 
+                Here is where we add dynamic behaviour to our HTML page:
+                every time the user will click the "Book" button in the page, the "onclick" event
+                handler will execute the "addBooking" function we defined in the "index.js" file.
+            -->
             <button onclick="addBooking()">Book</button>
         </div>
         <div id="bookingList"></div>
